@@ -1,3 +1,5 @@
+import '/app/models/product2.dart';
+import '/app/models/f_category.dart';
 import '/app/controllers/home_controller.dart';
 import '/app/models/user.dart';
 import '/app/networking/api_service.dart';
@@ -19,6 +21,16 @@ final Map<Type, dynamic> modelDecoders = {
   User: (data) => User.fromJson(data),
 
   // User: (data) => User.fromJson(data),
+
+  List<FCategory>: (data) =>
+      List.from(data).map((json) => FCategory.fromJson(json)).toList(),
+
+  FCategory: (data) => FCategory.fromJson(data),
+
+  List<Product2>: (data) =>
+      List.from(data).map((json) => Product2.fromJson(json)).toList(),
+
+  Product2: (data) => Product2.fromJson(data),
 };
 
 /* API Decoders

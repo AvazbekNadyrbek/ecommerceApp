@@ -55,4 +55,10 @@ class DarkThemeColors implements ColorStyles {
   // toast notification
   @override
   Color get toastNotificationBackground => const Color(0xff3e4447);
+
+  Color get bannerColor => const Color(0xffc4d1da);
+
+  Color get fbackgroundColor1 => const Color(0xffe7e8ea);
+
+  Color get fbackgroundColor2 => const Color(0xfff4f4f4);
 }

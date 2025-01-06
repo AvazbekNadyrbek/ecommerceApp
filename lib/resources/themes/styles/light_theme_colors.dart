@@ -34,7 +34,8 @@ class LightThemeColors implements ColorStyles {
   @override
   Color get buttonSecondaryBackground => const Color(0xff151925);
   @override
-  Color get buttonSecondaryContent => Colors.white.withAlpha((255.0 * 0.9).round());
+  Color get buttonSecondaryContent =>
+      Colors.white.withAlpha((255.0 * 0.9).round());
 
   // bottom tab bar
   @override
@@ -55,4 +56,10 @@ class LightThemeColors implements ColorStyles {
   // toast notification
   @override
   Color get toastNotificationBackground => Colors.white;
+
+  Color get bannerColor => const Color(0xffc4d1da);
+
+  Color get fbackgroundColor1 => const Color(0xffe7e8ea);
+
+  Color get fbackgroundColor2 => const Color(0xfff4f4f4);
 }

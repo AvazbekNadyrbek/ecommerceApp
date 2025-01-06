@@ -1,3 +1,9 @@
+import '/resources/pages/details_item_screen_page.dart';
+import '/resources/pages/app_profile_page.dart';
+import '/resources/pages/appnotifications_page.dart';
+import '/resources/pages/app_search_page.dart';
+import '/resources/pages/app_home_screen_page.dart';
+import '/resources/pages/app_main_screen_page.dart';
 import '/resources/pages/not_found_page.dart';
 import '/resources/pages/home_page.dart';
 import 'package:nylo_framework/nylo_framework.dart';
@@ -17,6 +23,7 @@ import 'package:nylo_framework/nylo_framework.dart';
 
 appRouter() => nyRoutes((router) {
       router.add(HomePage.path).initialRoute();
+
       // Add your routes here ...
 
       // router.add(NewPage.path, transition: PageTransitionType.fade);
@@ -29,4 +36,10 @@ appRouter() => nyRoutes((router) {
       //
       // });
       router.add(NotFoundPage.path).unknownRoute();
+      router.add(AppMainScreenPage.path);
+      router.add(AppHomeScreenPage.path);
+      router.add(AppSearchPage.path);
+      router.add(AppnotificationsPage.path);
+      router.add(AppProfilePage.path);
+      router.add(DetailsItemScreenPage.path);
     });

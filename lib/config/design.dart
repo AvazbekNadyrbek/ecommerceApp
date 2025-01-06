@@ -18,7 +18,7 @@ import 'package:nylo_framework/nylo_framework.dart';
 | You can use any font from Google Fonts library.
 | -------------------------------------------------------------------------- */
 
-final TextStyle appFont = GoogleFonts.outfit();
+final TextStyle appFont = GoogleFonts.poppins();
 // e.g. final TextStyle appThemeFont = GoogleFonts.lato();
 
 /* App Logo

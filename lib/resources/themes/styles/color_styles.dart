@@ -8,7 +8,7 @@ abstract class ColorStyles extends BaseColorStyles {
   /// Available styles
 
   // general
-  @override
+
   Color get background;
   @override
   Color get content;
@@ -55,6 +55,9 @@ abstract class ColorStyles extends BaseColorStyles {
   // toast notification
   Color get toastNotificationBackground;
 
+  Color get bannerColor;
+  Color get fbackgroundColor1;
+  Color get fbackgroundColor2;
   // e.g. add a new style
   // Uncomment the below:
   // Color get iconBackground;
