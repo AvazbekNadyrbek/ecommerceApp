@@ -1,64 +1,95 @@
-![Nylo Banner](https://nylo.dev/images/nylo_logo_header.png)
+# Flutter E-Commerce App with Nylo Framework
 
-<p align="center">
-  <a href="https://github.com/nylo-core/nylo/releases"><img src="https://img.shields.io/github/v/release/nylo-core/nylo?style=plastic" alt="Latest Release Version"></a>
-  <a href="https://github.com/nylo-core/nylo/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/nylo-core/nylo?style=plastic"></a>
-  <a href="#"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nylo-core/nylo?style=plastic"></a>
-</p>
+This is a learning project built with Flutter and the Nylo micro-framework. The project serves as a practical exploration of various Flutter widgets and the Nylo framework's features.
 
-## Nylo
+## Framework & Tools Used
 
-Nylo is a micro-framework for Flutter which is designed to help simplify developing apps. Every project provides a simple boilerplate and MVC pattern to help you build apps easier. 
+- **Flutter**: Main framework for building the UI
+- **Nylo Framework**: Micro-framework for Flutter that provides additional structure and features
+- **Dart**: Programming language
 
-This project is open source and MIT-licenced, we welcome any contributions. You can join as a backer/sponsor to fund future development for this project [here](https://nylo.dev)
+## Widgets & Concepts Implemented
 
----
+### Layout Widgets
+- `Scaffold`: Base layout structure
+- `Container`: Box model widget for padding, margins, and decorations
+- `Column` & `Row`: Flex-based layouts
+- `Stack`: Overlay positioning
+- `GridView`: Grid-based layouts
+- `SingleChildScrollView`: Scrollable content
+- `SafeArea`: Safe area handling
 
-## Features
-Some core features available
-* [Routing](https://nylo.dev/docs/6.x/router).
-* [Themes and styling](https://nylo.dev/docs/6.x/themes-and-styling).
-* [Localization](https://nylo.dev/docs/6.x/localization).
-* [CLI for generating project files](https://nylo.dev/docs/6.x/metro).
-* [Elegant API Services for Networking](https://nylo.dev/docs/6.x/networking).
-* [Creating App Icons](https://nylo.dev/docs/6.x/app-icons).
-* [Project Configuration](https://nylo.dev/docs/6.x/configuration).
-* [Streamlined Project Structure](https://nylo.dev/docs/6.x/directory-structure).
+### Navigation & Routing
+- `PageView`: Horizontal page swiping
+- Nylo Router: Route management
+- Custom route transitions
 
-## Requirements
-* Flutter >= 3.24.0
+### Interactive Elements
+- `GestureDetector`: Touch handling
+- `InkWell`: Touch feedback
+- `FloatingActionButton`: Action buttons
+- Custom buttons with state management
+
+### UI Components
+- `CircleAvatar`: Circular images and icons
+- `Icon`: Various icons using Iconsax package
+- `Text`: Text styling and formatting
+- Custom product cards
+- Custom color selector
+- Custom size selector
+
+### State Management
+- `setState`: Local state management
+- Nylo state management patterns
+- Enum handling for sizes and categories
+
+### Advanced Concepts
+- Custom widget creation
+- Widget composition
+- Responsive design
+- Asset management with Nylo
+- Theme management
+
+## Features Implemented
+
+1. Product listing with grid layout
+2. Product details page with:
+   - Image carousel
+   - Color selection
+   - Size selection
+   - Add to cart/Buy now buttons
+3. Category navigation
+4. Price display with discount handling
+
+## Next Steps
+
+- [ ] Implement search results page
+- [ ] Add search functionality
+- [ ] Implement filters
+- [ ] Add product sorting
+- [ ] Enhance search result display
+
+## Learning Focus
+
+This project is primarily focused on learning:
+1. Flutter widget implementations
+2. Nylo framework usage and best practices
+3. State management
+4. Clean code architecture
+5. UI/UX best practices
 
 ## Getting Started
 
-``` bash
-git clone https://github.com/nylo-core/nylo.git
-```
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Run the app:
+   ```bash
+   flutter run
+   ```
 
-## Documentation
-View our [docs](https://nylo.dev/docs) and visit [nylo.dev](https://nylo.dev)
+## Note
 
-## Changelog
-Please see [CHANGELOG](https://github.com/nylo-core/framework/blob/6.x/CHANGELOG.md) for more information what has changed recently.
-
-## Social
-* [Twitter](https://twitter.com/nylo_dev)
-
-## Security
-If you discover any security related issues, please email support@nylo.dev instead of using the issue tracker.
-
-## Contributors
-* [Anthony Gordon](https://github.com/agordn52)
-* [lpdevit](https://github.com/lpdevit)
-* [Abdulrasheed1729](https://github.com/Abdulrasheed1729)
-* [Rashid-Khabeer](https://github.com/Rashid-Khabeer)
-* [youssefKadaouiAbbassi](https://github.com/youssefKadaouiAbbassi)
-* [jeremyhalin](https://github.com/jeremyhalin)
-* [abdulawalarif](https://github.com/abdulawalarif)
-* [lepresk](https://github.com/lepresk)
-* [joshua1996](https://github.com/joshua1996)
-* [stensonb](https://github.com/stensonb)
-* [ruwiss](https://github.com/ruwiss)
-
-## Licence
-
-The MIT License (MIT). Please view the [License](https://github.com/nylo-core/nylo/blob/master/licence) File for more information.
+This is a learning project and is not intended for production use. It's designed to explore and understand Flutter widgets and the Nylo framework's capabilities.
