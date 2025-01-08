@@ -16,8 +16,12 @@ class _DetailsItemScreenPageState extends NyPage<DetailsItemScreenPage> {
   int currentIndex = 0;
   int selectedColorIndex = 1;
   int selectedSizeIndex = 1;
-  get init => () {};
   late AppModel productInfo = data();
+  late String heroTag;
+
+  @override
+  get init => () {};
+
   @override
   Widget view(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -31,8 +35,10 @@ class _DetailsItemScreenPageState extends NyPage<DetailsItemScreenPage> {
         actionsIconTheme: IconThemeData(color: Colors.black),
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,
-        title: Text(
-          '${productInfo.name}',
+        title: Center(
+          child: Text(
+            '${productInfo.name}',
+          ),
         ),
         actions: [
           Stack(
@@ -85,11 +91,20 @@ class _DetailsItemScreenPageState extends NyPage<DetailsItemScreenPage> {
               itemBuilder: (context, index) {
                 return Column(
                   children: [
-                    Image.asset(
-                      productInfo.image,
-                      height: size.height * 0.4,
-                      width: size.width * 0.85,
-                      fit: BoxFit.cover,
+                    Hero(
+                      tag: productInfo.image,
+                      child: Container(
+                        height: size.height * 0.4,
+                        width: size.width * 0.85,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: context.color.fbackgroundColor2,
+                          image: DecorationImage(
+                            image: AssetImage(productInfo.image),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 20,

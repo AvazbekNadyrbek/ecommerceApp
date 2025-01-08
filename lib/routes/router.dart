@@ -1,3 +1,4 @@
+import '/resources/pages/category_items_page.dart';
 import '/resources/pages/details_item_screen_page.dart';
 import '/resources/pages/app_profile_page.dart';
 import '/resources/pages/appnotifications_page.dart';
@@ -42,4 +43,5 @@ appRouter() => nyRoutes((router) {
       router.add(AppnotificationsPage.path);
       router.add(AppProfilePage.path);
       router.add(DetailsItemScreenPage.path);
-    });
+      router.add(CategoryItemsPage.path);
+});

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/app/models/app.dart';
 import 'package:flutter_app/app/models/f_category.dart';
 import 'package:flutter_app/bootstrap/extensions.dart';
+import 'package:flutter_app/resources/pages/category_items_page.dart';
 import 'package:flutter_app/resources/pages/details_item_screen_page.dart';
 import 'package:flutter_app/resources/widgets/banner_widget.dart';
 import 'package:flutter_app/resources/widgets/curated_items_widget.dart';
@@ -105,6 +106,32 @@ class _AppHomeScreenPageState extends NyPage<AppHomeScreenPage> {
                 children: List.generate(
                   fCategories.length,
                   (index) => InkWell(
+                    onTap: () {
+                      // filter products based ont he selected category
+
+                      final filterItems = fashioEcomerce
+                          .where((item) =>
+                              item.category?.contains(Category.values
+                                  .firstWhere(
+                                      (e) =>
+                                          e.name.toLowerCase() ==
+                                          fCategories[index]
+                                              .name
+                                              ?.toLowerCase(),
+                                      orElse: () => Category.women)) ??
+                              false)
+                          .toList();
+
+                      // Navigate to the category page
+
+                      routeTo(
+                        CategoryItemsPage.path,
+                        data: {
+                          'category': fCategories[index].name,
+                          'items': filterItems,
+                        },
+                      );
+                    },
                     child: Column(
                       children: [
                         Container(

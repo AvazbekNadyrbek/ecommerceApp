@@ -1,3 +1,4 @@
+import '/app/models/sub_category.dart';
 import '/app/models/product2.dart';
 import '/app/models/f_category.dart';
 import '/app/controllers/home_controller.dart';
@@ -31,6 +32,10 @@ final Map<Type, dynamic> modelDecoders = {
       List.from(data).map((json) => Product2.fromJson(json)).toList(),
 
   Product2: (data) => Product2.fromJson(data),
+
+  List<SubCategory>: (data) => List.from(data).map((json) => SubCategory.fromJson(json)).toList(),
+
+  SubCategory: (data) => SubCategory.fromJson(data),
 };
 
 /* API Decoders

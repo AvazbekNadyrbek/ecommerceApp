@@ -31,3 +31,13 @@ List<FCategory> fCategories = [
   FCategory(name: "Kids", image: "kids.png"),
   FCategory(name: "Baby", image: "baby.png"),
 ];
+
+List<String> filteredCategories = [
+  "Filter",
+  "Size",
+  "Ratings",
+  "Size",
+  "Color",
+  "Price",
+  "Brand",
+];

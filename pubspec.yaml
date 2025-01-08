@@ -65,6 +65,7 @@ flutter:
     - public/fonts/
     - public/images/
     - public/images/category_image/
+    - public/images/category_image/sub_category/
     - public/app_icon/
     - lang/
     - .env
